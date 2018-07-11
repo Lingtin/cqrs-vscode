@@ -1,0 +1,61 @@
+{
+  "domain": {
+    "prefix": "domain",
+    "body": [
+      "const {Domain} = require('cqrs');  // 创建Domain实例",
+      "const domain = new Domain();",
+      "const className = require('className');",
+      "",
+      "// register User Actor class",
+      "domain.register(className);"
+    ],
+    "description": "const {Domain} = require('cqrs');  // 创建Domain实例"
+  },
+  "domain create": {
+    "prefix": "domain create",
+    "body": [
+      "let name = await domain.create('name',{",
+      "                name:value",
+      "           });"
+    ],
+    "description": "domain.create(); //创建Actor实例"
+  },
+  "domain get": {
+    "prefix": "domain get",
+    "body": [
+      "let name = await domain.get(name,value);"
+    ],
+    "description": "domain.get(name,value); // 得到一个 Actor 实例"
+  },
+  "domain register": {
+    "prefix": "domain register",
+    "body": [
+      "domain.register(User);"
+    ],
+    "description": "domain.register(User); // 注册Actor类"
+  },
+  "domain on": {
+    "prefix": "domain on",
+    "body": [
+      "domain.on({actorType:Name},(event)=>{",
+      "   ",
+      "});"
+    ],
+    "description": "domain.on({actorType:Name},handle); // 创建监听事件"
+  },
+  "actorType": {
+    "prefix": "actorType",
+    "body": [
+      "actorType:"
+    ],
+    "description": "actorType:name;"
+  },
+  "actorId": {
+    "prefix": "actorId",
+    "body": [
+      "actorId:"
+    ],
+    "description": "actorId:ID;"
+  }
+}
+

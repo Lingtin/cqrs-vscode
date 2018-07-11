@@ -2,7 +2,7 @@
     "name": "cqrs-snippets",
     "displayName": "cqrs Snippets",
     "description": "cqrs Snippets",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "xuesheng",
     "icon": "images/title.png",
     "engines": {
@@ -16,6 +16,14 @@
             {
                 "language": "javascript",
                 "path": "./snippets/api-cqrs.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/api-domain.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/api-service.json"
             }
         ]
     },
@@ -26,9 +34,9 @@
         "snippet",
         "cqrs"
     ],
-    "homepage": "https://code.aliyun.com/xuesheng/cqrs-vscode?spm=a2111a.8458726.0.0.6c6c7a7fhEBqZy",
+    "homepage": "https://github.com/Lingtin/cqrs-vscode",
     "repository": {
         "type": "git",
-        "url": "https://code.aliyun.com/xuesheng/cqrs-vscode?spm=a2111a.8458726.0.0.6c6c7a7fhEBqZy"
+        "url": "https://github.com/Lingtin/cqrs-vscode"
     }
 }

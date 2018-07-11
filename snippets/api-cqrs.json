@@ -7,6 +7,14 @@
       "",
       "// extends Actor",
       "module.exports = class ClassName extends Actor{",
+      "    static get uniqueFields(){",
+      "        ",
+      "    }",
+      " ",
+      "    static beforeCreate(data, domain, uniqueOk, holdedFields){",
+      "         ",
+      "    }",
+      "    ",
       "    constructor(data) {",
       "",
       "        super({",
@@ -66,34 +74,6 @@
       "const name = await this.$.create(name, {name:value);"
     ],
     "description": "const name = await this.$.create(name, {name:value);"
-  },
-  "domain": {
-    "prefix": "domain",
-    "body": [
-      "const {Domain} = require('cqrs');  // imp cqrs asd Domain",
-      "const domain = new Domain();",
-      "const className = require('className');",
-      "",
-      "// register User Actor class",
-      "domain.register(className);"
-    ],
-    "description": "const {Domain} = require('cqrs');  // imp cqrs asd Domain"
-  },
-  "domain create": {
-    "prefix": "domain create",
-    "body": [
-      "let name = await domain.create('name',{",
-      "                name:value",
-      "           });"
-    ],
-    "description": "await domain.create();"
-  },
-  "domain get": {
-    "prefix": "domain get",
-    "body": [
-      "let name = await domain.get(name,value);"
-    ],
-    "description": "await domain.get(name,value);"
   }
 }
 

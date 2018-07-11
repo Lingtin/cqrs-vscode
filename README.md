@@ -45,6 +45,17 @@ DDD-CQRS-Actor framework.
 * domain
 * domain create
 * domain get
-....
+
+* get()
+* create()
+* apply()
+* subscribe()
+* unsubscribe(event)
+* lock(timeout?: number)
+* unlock()
+* sagaBegin()
+* sagaEnd()
+* rollback()
+* getHistory()
 
 ***************

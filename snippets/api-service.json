@@ -1,0 +1,80 @@
+{
+  "$.getHistory()": {
+    "prefix": "this.$.getHistory",
+    "body": [
+      "this.$.getHistory()"
+    ],
+    "description": "this.$.getHistory()"
+  },
+  "$.rollback()": {
+    "prefix": "this.$.rollback()",
+    "body": [
+      "this.$.rollback()"
+    ],
+    "description": "this.$.rollback()"
+  },
+  "$.sagaEnd()": {
+    "prefix": "this.$.sagaEnd()",
+    "body": [
+      "this.$.sagaEnd()"
+    ],
+    "description": "this.$.sagaEnd()"
+  },
+  "$.sagaBegin()": {
+    "prefix": "this.$.sagaBegin()",
+    "body": [
+      "this.$.sagaBegin()"
+    ],
+    "description": "this.$.sagaBegin()"
+  },
+  "$.unlock()": {
+    "prefix": "this.$.unlock()",
+    "body": [
+      "this.$.unlock()"
+    ],
+    "description": "this.$.unlock()"
+  },
+  "$.lock()": {
+    "prefix": "this.$.lock(timeout?: number)",
+    "body": [
+      "this.$.lock(timeout?: number)"
+    ],
+    "description": "this.$.lock(timeout?: number)"
+  },
+  "$.apply()": {
+    "prefix": "this.$.apply()",
+    "body": [
+      "this.$.apply()"
+    ],
+    "description": "this.$.apply()"
+  },
+  "$.create()": {
+    "prefix": "this.$.create()",
+    "body": [
+      "this.$.create()"
+    ],
+    "description": "this.$.create()"
+  },
+  "$.get()": {
+    "prefix": "this.$.get()",
+    "body": [
+      "this.$.get()"
+    ],
+    "description": "this.$.get()"
+  },
+  "$.unsubscribe()": {
+    "prefix": "this.$.unsubscribe()",
+    "body": [
+      "this.$.unsubscribe()"
+    ],
+    "description": "this.$.unsubscribe()"
+  },
+  "$.subscribe()": {
+    "prefix": "this.$.subscribe()",
+    "body": [
+      "this.$.subscribe()"
+    ],
+    "description": "this.$.subscribe()"
+  }
+}
+
