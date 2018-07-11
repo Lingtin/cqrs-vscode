@@ -1,0 +1,99 @@
+{
+  "cqrs": {
+    "prefix": "cqrs",
+    "body": [
+      "const {Actor} = require('cqrs'); // imp cqrs as Actor",
+      "",
+      "",
+      "// extends Actor",
+      "module.exports = class ClassName extends Actor{",
+      "    constructor(data) {",
+      "",
+      "        super({",
+      "            createTime:Date.now()",
+      "        });",
+      "    };",
+      "",
+      "    get updater() {",
+      "        return {",
+      "",
+      "        };",
+      "    };",
+      "};"
+    ],
+    "description": "modules.exports=class ClassName extends Actor{};"
+  },
+  "cqrs actor": {
+    "prefix": "cqrs actor",
+    "body": [
+      "const {Actor} = require('cqrs'); // imp cqrs asd actor"
+    ],
+    "description": "const {Actor} = require('cqrs');"
+  },
+  "cqrs extends": {
+    "prefix": "cqrs extends",
+    "body": [
+      "// extends Actor",
+      "module.exports = class ClassName extends Actor{",
+      "    constructor(data){}",
+      "",
+      "    get updater(){",
+      "        return {",
+      "",
+      "        };",
+      "    };",
+      "};"
+    ],
+    "description": "modules.exports=class ClassName extends Actor{};"
+  },
+  "cqrs service get": {
+    "prefix": "cqrs service get",
+    "body": [
+      "const name = await this.service.get('name',value);"
+    ],
+    "description": "const name = await this.service.get('name',value);"
+  },
+  "cqrs service apply": {
+    "prefix": "cqrs service apply",
+    "body": [
+      "this.service.apply(name,value, false);"
+    ],
+    "description": "this.service.apply(name,value, false);"
+  },
+  "cqrs service create": {
+    "prefix": "cqrs service create",
+    "body": [
+      "const name = await this.$.create(name, {name:value);"
+    ],
+    "description": "const name = await this.$.create(name, {name:value);"
+  },
+  "domain": {
+    "prefix": "domain",
+    "body": [
+      "const {Domain} = require('cqrs');  // imp cqrs asd Domain",
+      "const domain = new Domain();",
+      "const className = require('className');",
+      "",
+      "// register User Actor class",
+      "domain.register(className);"
+    ],
+    "description": "const {Domain} = require('cqrs');  // imp cqrs asd Domain"
+  },
+  "domain create": {
+    "prefix": "domain create",
+    "body": [
+      "let name = await domain.create('name',{",
+      "                name:value",
+      "           });"
+    ],
+    "description": "await domain.create();"
+  },
+  "domain get": {
+    "prefix": "domain get",
+    "body": [
+      "let name = await domain.get(name,value);"
+    ],
+    "description": "await domain.get(name,value);"
+  }
+}
+
