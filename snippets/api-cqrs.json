@@ -1,79 +1,78 @@
 {
-  "cqrs": {
-    "prefix": "cqrs",
-    "body": [
-      "const {Actor} = require('cqrs'); // imp cqrs as Actor",
-      "",
-      "",
-      "// extends Actor",
-      "module.exports = class ClassName extends Actor{",
-      "    static get uniqueFields(){",
-      "        ",
-      "    }",
-      " ",
-      "    static beforeCreate(data, domain, uniqueOk, holdedFields){",
-      "         ",
-      "    }",
-      "    ",
-      "    constructor(data) {",
-      "",
-      "        super({",
-      "            createTime:Date.now()",
-      "        });",
-      "    };",
-      "",
-      "    get updater() {",
-      "        return {",
-      "",
-      "        };",
-      "    };",
-      "};"
-    ],
-    "description": "modules.exports=class ClassName extends Actor{};"
-  },
-  "cqrs actor": {
-    "prefix": "cqrs actor",
-    "body": [
-      "const {Actor} = require('cqrs'); // imp cqrs asd actor"
-    ],
-    "description": "const {Actor} = require('cqrs');"
-  },
-  "cqrs extends": {
-    "prefix": "cqrs extends",
-    "body": [
-      "// extends Actor",
-      "module.exports = class ClassName extends Actor{",
-      "    constructor(data){}",
-      "",
-      "    get updater(){",
-      "        return {",
-      "",
-      "        };",
-      "    };",
-      "};"
-    ],
-    "description": "modules.exports=class ClassName extends Actor{};"
-  },
-  "cqrs service get": {
-    "prefix": "cqrs service get",
-    "body": [
-      "const name = await this.service.get('name',value);"
-    ],
-    "description": "const name = await this.service.get('name',value);"
-  },
-  "cqrs service apply": {
-    "prefix": "cqrs service apply",
-    "body": [
-      "this.service.apply(name,value, false);"
-    ],
-    "description": "this.service.apply(name,value, false);"
-  },
-  "cqrs service create": {
-    "prefix": "cqrs service create",
-    "body": [
-      "const name = await this.$.create(name, {name:value);"
-    ],
-    "description": "const name = await this.$.create(name, {name:value);"
-  }
+    "cqrs": {
+        "prefix": "cqrs",
+        "body": [
+            "const {Actor} = require('cqrs'); // imp cqrs as Actor",
+            "",
+            "",
+            "// extends Actor",
+            "module.exports = class ClassName extends Actor{",
+            "    static get uniqueFields(){",
+            "        ",
+            "    }",
+            " ",
+            "    static beforeCreate(data, domain, uniqueOk, holdedFields){",
+            "         ",
+            "    }",
+            "    ",
+            "    constructor(data) {",
+            "",
+            "        super({",
+            "            createTime:Date.now()",
+            "        });",
+            "    };",
+            "",
+            "    get updater() {",
+            "        return {",
+            "",
+            "        };",
+            "    };",
+            "};"
+        ],
+        "description": "modules.exports=class ClassName extends Actor{};"
+    },
+    "cqrs actor": {
+        "prefix": "cqrs actor",
+        "body": [
+            "const {Actor} = require('cqrs'); // imp cqrs asd actor"
+        ],
+        "description": "const {Actor} = require('cqrs');"
+    },
+    "cqrs extends": {
+        "prefix": "cqrs extends",
+        "body": [
+            "// extends Actor",
+            "module.exports = class ClassName extends Actor{",
+            "    constructor(data){}",
+            "",
+            "    get updater(){",
+            "        return {",
+            "",
+            "        };",
+            "    };",
+            "};"
+        ],
+        "description": "modules.exports=class ClassName extends Actor{};"
+    },
+    "cqrs service get": {
+        "prefix": "cqrs service get",
+        "body": [
+            "const name = await this.service.get('name',value);"
+        ],
+        "description": "const name = await this.service.get('name',value);"
+    },
+    "cqrs service apply": {
+        "prefix": "cqrs service apply",
+        "body": [
+            "this.service.apply(name,value, false);"
+        ],
+        "description": "this.service.apply(name,value, false);"
+    },
+    "cqrs service create": {
+        "prefix": "cqrs service create",
+        "body": [
+            "const name = await this.$.create(name, {name:value);"
+        ],
+        "description": "const name = await this.$.create(name, {name:value);"
+    }
 }
-
