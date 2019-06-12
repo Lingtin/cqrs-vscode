@@ -1,41 +1,41 @@
 {
     "clg": {
-        "prefix": "console.log('log')",
+        "prefix": "clg",
         "body": [
             "console.log()"
         ],
         "description": " // 输出信息"
     },
     "clo": {
-        "prefix": "console.info('info')",
+        "prefix": "clo",
         "body": [
             "console.info()"
         ],
         "description": " // console.log 别名，输出信息"
     },
     "clw": {
-        "prefix": "console.warn('warn msg')",
+        "prefix": "clw",
         "body": [
             "console.warn()"
         ],
         "description": " // 输出警告信息"
     },
     "cle": {
-        "prefix": "console.warn('error msg')",
+        "prefix": "cle",
         "body": [
             "console.error()"
         ],
         "description": " // 输出信息时，在最前面加一个红色的叉，表示出错，同时会显示错误发生的堆栈"
     },
     "clt": {
-        "prefix": "console.trace('trace msg')",
+        "prefix": "clt",
         "body": [
             "console.trace()"
         ],
         "description": " // 追踪函数的调用过程"
     },
     "clr": {
-        "prefix": "console.clear()",
+        "prefix": "clr",
         "body": [
             "console.clear()"
         ],
