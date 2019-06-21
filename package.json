@@ -2,7 +2,7 @@
     "name": "cqrs-snippets",
     "displayName": "cqrs Snippets",
     "description": "cqrs Snippets",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "xuesheng",
     "icon": "images/title.png",
     "engines": {

@@ -2,42 +2,42 @@
     "clg": {
         "prefix": "clg",
         "body": [
-            "console.log()"
+            "console.log($1)"
         ],
         "description": " // 输出信息"
     },
     "clo": {
         "prefix": "clo",
         "body": [
-            "console.info()"
+            "console.info($1)"
         ],
         "description": " // console.log 别名，输出信息"
     },
     "clw": {
         "prefix": "clw",
         "body": [
-            "console.warn()"
+            "console.warn($1)"
         ],
         "description": " // 输出警告信息"
     },
     "cle": {
         "prefix": "cle",
         "body": [
-            "console.error()"
+            "console.error($1)"
         ],
         "description": " // 输出信息时，在最前面加一个红色的叉，表示出错，同时会显示错误发生的堆栈"
     },
     "clt": {
         "prefix": "clt",
         "body": [
-            "console.trace()"
+            "console.trace($1)"
         ],
         "description": " // 追踪函数的调用过程"
     },
     "clr": {
         "prefix": "clr",
         "body": [
-            "console.clear()"
+            "console.clear($1)"
         ],
         "description": "// 清除当前控制台的所有输出，将光标回置到第一行。"
     }

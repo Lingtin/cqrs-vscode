@@ -58,7 +58,7 @@
     "$.get()": {
         "prefix": "$.get()",
         "body": [
-            "$.get()"
+            "$.get(eventType,data)"
         ],
         "description": "$.get()"
     },

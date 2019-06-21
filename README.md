@@ -2,13 +2,15 @@
 
 #### NodeJs CQRS框架 代码片段!
 
-#### console 函数片段
+#### Console 函数片段
 
 #### 特此声明：如有损坏其权益请联系本人邮箱zxsxzt@gmail.com进行删除，谢谢！
 
-曾亮老师的  CQRS框架介绍 github地址：https://github.com/liangzeng/cqrs
+@leozale
+leozale CQRS框架介绍 github地址：https://github.com/cqrs2/cqrs
 
-曾亮老师的  CQRS框架介绍 github地址：https://github.com/liangzeng/cqrs
+@leozale
+leozale CQRS框架介绍 github地址：https://github.com/cqrs2/cqrs
 
 ### Snippets cqrs
 
@@ -21,27 +23,58 @@ cqrs service get|const name = await this.service.get('name',value);
 cqrs service apply|this.service.apply(name,value, false);
 cqrs service create|const name = await this.$.create(name, {name:value);
 
-### Snippets domain
-键|描述
---|:--:|
-domain|
-domain create|
-domain get|
+### 创建Actor实例
 
-### Snippets $
-键|描述
---|:--:|
-$.get()|
-$.create()|
-$.apply()|
-$.subscribe()|
-$.unsubscribe()|
-$.lock()|
-$.unlock()|
-$.sagaBegin()|
-$.sagaEnd()|
-$.rollback()|
-$.getHistory()|
+domain   // 创建Domain实例  
+const {Domain} = require('cqrs');   
+
+
+//创建Actor实例  
+domain create|domain.create(); 
+
+// 得到一个 Actor 实例 
+domain get  
+domain.get(name,value);   
+
+
+// 监听所有 User 的所有事件  
+domain.on({actorType:"User"},handle);
+
+// 监听所有 User 的 changeName 事件  
+domain.on({actorType:"User",type:"changeName"},handle);  
+
+// 监听 id 为 userId 的 User 的所有事件  
+domain.on({actorType:"User", actorId:userId},handle);
+
+// 监听 id 为 userId 的 User 的 change 事件  
+domain.on({actorType:"User", actorId:userId , type:"change"},handle);
+
+// 监听所有事件！  
+domain.on({},handle);
+
+### service 的别名 $ , 所有的业务方法内部都可调用。下面是 service 服务对象的全部方法。
+$.get()
+
+$.create()
+
+$.apply()
+
+$.subscribe()
+
+$.unsubscribe()
+
+$.lock()
+
+$.unlock()
+
+$.sagaBegin()
+
+$.sagaEnd()
+
+$.rollback()
+
+$.getHistory()
+
 
 #### Snippets console
 
